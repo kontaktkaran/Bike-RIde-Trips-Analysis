@@ -2,15 +2,15 @@ use data_analysis_bike
 -- Business Problem 1st Part--
 -- Member Vs Casual--
   select 
-  count(ride_id) as Total_Trips,
-  member_casual
+     count(ride_id) as Total_Trips,
+     member_casual
   from ride_data
   group by member_casual
 
   -- Bike types--
-    select 
-  count(ride_id) as Total_Trips,
-  rideable_type
+  select 
+       count(ride_id) as Total_Trips,
+       rideable_type
   from ride_data
   group by rideable_type
 
@@ -18,23 +18,23 @@ use data_analysis_bike
   -- Business Problem-- 
   -- Find Peak_ hours , busy week-day , busiest_month
   select 
-   datepart(hour,started_at) as Hour,
-   count(ride_id) as total_trips
+       datepart(hour,started_at) as Hour,
+       count(ride_id) as total_trips
    from ride_data
    group by datepart(hour,started_at)
    order by datepart(hour,started_at) asc
    
    -- Trends over Month
    select 
-   datepart(month,started_at) as Month,
-   count(ride_id) as total_trips
+        datepart(month,started_at) as Month,
+       count(ride_id) as total_trips
    from ride_data
    group by datepart(month,started_at)
    order by datepart(month,started_at) asc
    -- Trends Over Week
     select 
-   datepart(WEEKDAY,started_at) as day,
-   count(ride_id) as total_trips
+        datepart(WEEKDAY,started_at) as day,
+        count(ride_id) as total_trips
    from ride_data
    group by datepart(WEEKDAY,started_at)
    order by datepart(weekday,started_at) asc
@@ -64,8 +64,8 @@ order by trip_duration asc
 -- Identify Station with frequent start, frequent end and top paths which is prefferred most.
 -- Top 10 Paths 
   select top 10
-  start_station_name,end_station_name ,
-  count(ride_id) as total_trips
+       start_station_name,end_station_name ,
+       count(ride_id) as total_trips
   from ride_data
   where start_station_name <>'unknown' 
   and end_station_name <>'unknown'
@@ -75,9 +75,9 @@ order by trip_duration asc
 
  -- Top 10 Starting Stations
 
-   select top 10
-  start_station_name,
-  count(ride_id) as total_trips
+  select top 10
+      start_station_name,
+      count(ride_id) as total_trips
   from ride_data
   where start_station_name <>'unknown' 
   group by start_station_name
@@ -86,7 +86,7 @@ order by trip_duration asc
   -- Top 10 Ending Stations
   
   select top 10
-  end_station_name,
+     end_station_name,
   count(ride_id) as total_trips
   from ride_data
   where end_station_name <>'unknown' 
@@ -95,9 +95,9 @@ order by trip_duration asc
 
   -- Bottom 10 starting Station 
   
-   select top 10
-  start_station_name,
-  count(ride_id) as total_trips
+  select top 10
+      start_station_name,
+      count(ride_id) as total_trips
   from ride_data
   where start_station_name <>'unknown' 
   group by start_station_name
