@@ -41,7 +41,7 @@
 6. **Operational recommendations** — rebalancing schedule, dock capacity, targeted promotions, and data quality fixes (see `docs/methodology.md`).
 
 ---
-##Insights & Business Recommendations
+## Insights & Business Recommendations
 
 **1️⃣ Member vs Casual Riders (01_member_vs_casual.sql)**
 Insight: Members contribute ≈ 64 % of total trips; casual riders ≈ 36 %.
@@ -109,6 +109,10 @@ Expand dock capacity at Navy Pier & DuSable Lake Shore Dr.
 Offer discounts for rides starting at low‑traffic stations.
 
 Clean “unknown station” data (> 0.5 M records) for accurate route analytics.
+
+---
+
+
 
 
    venv\Scripts\activate
