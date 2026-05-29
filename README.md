@@ -41,8 +41,9 @@
 6. **Operational recommendations** — rebalancing schedule, dock capacity, targeted promotions, and data quality fixes (see `docs/methodology.md`).
 
 ---
-****Insights & Business Recommendations
-1️⃣ Member vs Casual Riders (01_member_vs_casual.sql)
+##Insights & Business Recommendations
+
+**1️⃣ Member vs Casual Riders (01_member_vs_casual.sql)**
 Insight: Members contribute ≈ 64 % of total trips; casual riders ≈ 36 %.
 
 Recommendation:
@@ -53,7 +54,7 @@ Convert casual riders through weekend discounts and “first‑month membership�
 
 Segment marketing: casual riders favor leisure hours → focus on experience‑based campaigns.
 
-2️⃣ Bike Types (02_bike_types.sql)
+**2️⃣ Bike Types (02_bike_types.sql)**
 Insight: Classic bikes ≈ 65 % usage; electric bikes ≈ 35 %.
 
 Recommendation:
@@ -64,7 +65,7 @@ Schedule preventive maintenance for classic bikes.
 
 Apply dynamic pricing—slightly higher for electric bikes during peak hours.
 
-3️⃣ – 5️⃣ Temporal Patterns (03_hourly_trend.sql, 04_weekday_trend.sql, 05_monthly_trend.sql)
+**3️⃣ – 5️⃣ Temporal Patterns (03_hourly_trend.sql, 04_weekday_trend.sql, 05_monthly_trend.sql)**
 Insight:
 
 Peak hours 3 – 6 PM; Friday–Saturday busiest; May–August seasonal surge.
@@ -77,7 +78,7 @@ Increase fleet and marketing spend in summer.
 
 Offer weekday commuter plans for nearby offices.
 
-6️⃣ Trip Duration Buckets (06_duration_buckets.sql)
+**6️⃣ Trip Duration Buckets (06_duration_buckets.sql)**
 Insight: Majority of rides < 15 min; sharp drop after 30 min.
 
 Recommendation:
@@ -88,7 +89,7 @@ Optimize dock turnover and quick maintenance cycles.
 
 Add auto‑renew prompts for riders nearing time limits.
 
-7️⃣ – 10️⃣ Station Imbalance & Routes
+**7️⃣ – 10️⃣ Station Imbalance & Routes**
 (07_top_paths.sql, 08_top_starting_stations.sql, 09_top_ending_stations.sql, 10_bottom_starting_stations.sql)
 
 Insight:
