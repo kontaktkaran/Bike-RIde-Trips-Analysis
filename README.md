@@ -8,7 +8,7 @@
 ## Contents
 ### ride_data_cleaning.ipynb
 **Purpose:** Reproducible record of cleaning, validation, and export for Power BI.  
-- ###`sql/`** — SQL scripts:
+### `sql/`** — SQL scripts:
   - `00_create_tables.sql` — example schema for staging/production.
   - `01_member_vs_casual.sql` — member vs casual counts.
   - `02_bike_types.sql` — counts by rideable type.
