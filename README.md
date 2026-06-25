@@ -26,8 +26,8 @@
 - **`docs/methodology.md`** — cleaning steps, assumptions, and known issues.  
 - **`full-pbix-link.txt`** — external link to the full PBIX (OneDrive / Google Drive).
 - 
-![Dashboard screenshot 1](Dashboard_pic1st.png)
-![Dashboard screenshot 2](DashboardPic2nd.png)
+![Dashboard screenshot 1](timeperiod.png)
+![Dashboard screenshot 2](StationWise.png)
 
 ---
 
