@@ -17,14 +17,16 @@
   - `07_top_paths.sql`, `08_top_starting_stations.sql`, `09_top_ending_stations.sql`, `10_bottom_starting_stations.sql` — station & route analysis.
   - `11_views_and_aggregates.sql` — views for Power BI import.
   - `12_qc_checks.sql` — data quality checks.
-    [](Dashboard-pic1st.png)
-    [](DashboardPic2nd.png)
+   
+  
 - **`powerbi/sample.pbix`** — lightweight Power BI report (kept <25 MB).  
 - **`powerbi/screenshots/`** — dashboard screenshots used in the presentation.  
 - **`presentation/Bike_Sharing_Presentation.pptx`** — slide deck with insights and speaker notes.  
 - **`docs/data_dictionary.md`** — column definitions, types, units, and data quality flags.  
 - **`docs/methodology.md`** — cleaning steps, assumptions, and known issues.  
 - **`full-pbix-link.txt`** — external link to the full PBIX (OneDrive / Google Drive).
+  [](Dashboard-pic1st.png)
+    [](DashboardPic2nd.png)
 
 ---
 
